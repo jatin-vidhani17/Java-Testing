@@ -40,8 +40,18 @@ class var{
         System.out.println("\nBoolean's Arithmetic Operations : ");
         System.out.println("Addition : " + (1 + new_num));
         System.out.println("Subtraction : " + (1 - new_num));
-        System.out.println("Multiplication : " + (num2 * new_num));
-        System.out.println("Division : " + (num2 / new_num));
+        System.out.println("Multiplication : " + (1 * new_num));
+        System.out.println("Division : " + (1 / new_num));
+    }
+    else{
+        System.out.println("\nnBoolean's Arithmetic Operations : ");
+        System.out.println("Addition : " + (0 + new_num));
+        System.out.println("Subtraction : " + (0 - new_num));
+        System.out.println("Multiplication : " + (0 * new_num));
+        System.out.println("Division : " + (0 / new_num));
+    }
+}
+
     }
 }
 
