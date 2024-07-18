@@ -36,6 +36,16 @@ class var{
         System.out.println("Multiplication : " + (num2 * new_num));
         System.out.println("Division : " + (num2 / new_num));
     }
+    if(bool == true){
+        System.out.println("\nBoolean's Arithmetic Operations : ");
+        System.out.println("Addition : " + (1 + new_num));
+        System.out.println("Subtraction : " + (1 - new_num));
+        System.out.println("Multiplication : " + (num2 * new_num));
+        System.out.println("Division : " + (num2 / new_num));
+    }
+}
+
+    }
 }
 
 /*
