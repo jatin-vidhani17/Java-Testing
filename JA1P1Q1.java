@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class var{
+class Var{
     public static void main(String[] args){
         int num,new_num;
         double num2;
@@ -35,26 +35,22 @@ class var{
         System.out.println("Subtraction : " + (num2 - new_num));
         System.out.println("Multiplication : " + (num2 * new_num));
         System.out.println("Division : " + (num2 / new_num));
-    }
-    if(bool == true){
-        System.out.println("\nBoolean's Arithmetic Operations : ");
-        System.out.println("Addition : " + (1 + new_num));
-        System.out.println("Subtraction : " + (1 - new_num));
-        System.out.println("Multiplication : " + (1 * new_num));
-        System.out.println("Division : " + (1 / new_num));
-    }
-    else{
-        System.out.println("\nnBoolean's Arithmetic Operations : ");
-        System.out.println("Addition : " + (0 + new_num));
-        System.out.println("Subtraction : " + (0 - new_num));
-        System.out.println("Multiplication : " + (0 * new_num));
-        System.out.println("Division : " + (0 / new_num));
-    }
-}
 
-    }
-}
-
+        if(bool == true){
+            System.out.println("\nBoolean's Arithmetic Operations : ");
+            System.out.println("Addition : " + (1 + new_num));
+            System.out.println("Subtraction : " + (1 - new_num));
+            System.out.println("Multiplication : " + (1 * new_num));
+            System.out.println("Division : " + (1 / new_num));
+        }
+        else{
+            System.out.println("\nBoolean's Arithmetic Operations : ");
+            System.out.println("Addition : " + (0 + new_num));
+            System.out.println("Subtraction : " + (0 - new_num));
+            System.out.println("Multiplication : " + (0 * new_num));
+            System.out.println("Division : " + (0 / new_num));
+        }
+        scan.close();
     }
 }
 
@@ -65,10 +61,10 @@ Output :
 Enter The Number as Integer : 1
 Enter The Number as Floating Value : 1.1
 Enter The Character : a
-Enter The Bool(True/False) : false
+Enter The Bool(True/False) : true
 
 Enter A Scaler Value : 5
-Integer's Arithmetic Operations : 
+Integer's Arithmetic Operations :
 Addition : 6
 Subtraction : -4
 Multiplication : 5
@@ -85,5 +81,11 @@ Addition : 6.1
 Subtraction : -3.9
 Multiplication : 5.5
 Division : 0.22000000000000003
+
+Boolean's Arithmetic Operations :
+Addition : 6
+Subtraction : -4
+Multiplication : 5
+Division : 0
 
 */
