@@ -1,11 +1,3 @@
-/*
-Create a program that analyzes temperature data. The program should have the following features:
- Allow the user to input a series of temperature readings (in Celsius).
- Calculate and display the average temperature.
- Determine and display the highest and lowest temperatures.
- Categorize the temperatures into "cold," "mild," and "hot" based on predefined
-temperature ranges.
-*/
 import java.util.Scanner;
 class temperature{
     
