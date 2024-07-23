@@ -11,6 +11,7 @@ class rectangle{
         float area = len*wid,perimeter = 2*(len+wid);
         System.out.println("The Area Of Rectangle = "+area);
         System.out.println("The Perimeter Of Rectangle = "+perimeter);
+        scan.close();
     }
 }
 
