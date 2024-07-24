@@ -32,8 +32,11 @@ class sequence{
         System.out.println();
     }
 
-    static void useRecurrsion(int num){
-        System.out.println("Teating Func Call!");
+    static void useRecurrsion(int num,int num2,int num3){
+        if(num > 0){
+            System.out.print(a + " ");
+            useRecurrsion(num-1,b,a+b);
+        }
     }
 
     static void menu(){
@@ -52,13 +55,16 @@ class sequence{
             scan.nextLine();
             switch(choice){
                 case 1:
+                    System.out.print("The Fibonacci Sequence using For Loop : ");
                     useForLoop(num);
                     break;
                 case 2:
+                    System.out.print("The Fibonacci Sequence using While Loop : ");
                     useWhileLoop(num);
                     break;
                 case 3:
-                    useRecurrsion(num);
+                    System.out.print("The Fibonacci Sequence using Recurrsion : ");
+                    useRecurrsion(num,0,1);
                     break;
                 case 4:
                     System.exit(0);
