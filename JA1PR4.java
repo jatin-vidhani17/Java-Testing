@@ -47,13 +47,13 @@ class sequence{
         Scanner scan = new Scanner(System.in);
         int choice = 0;
         do{
-            System.out.print("Enter the Number Till You Want Numbers of Fibonaaci Sequence : ");
-            int num = scan.nextInt();
-            scan.nextLine();
             menu();
             choice = scan.nextInt();
             scan.nextLine();
-            switch(choice){
+	    System.out.print("Enter the Number Till You Want Numbers of Fibonaaci Sequence : ");
+            int num = scan.nextInt();
+            scan.nextLine();
+	    switch(choice){
                 case 1:
                     System.out.print("The Fibonacci Sequence using For Loop : ");
                     useForLoop(num);
