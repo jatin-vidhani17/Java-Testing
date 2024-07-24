@@ -1,18 +1,46 @@
 import java.util.Scanner;
 
 class sequence{
-    
-    void useForLoop(int num){
-		int arr[] = new int(num);
-		
+    static void useWhileLoop(int num){
+	    if(num <= 0){
+            System.out.println("Invalid Number!!");
+            return ;
+        }
+        int num1 = 0, num2 = 1,i = 0;
+        while(i != num){
+            System.out.print(num1 + " ");
+            int add = num1 + num2;
+            num1 = num2;
+            num2 = add;
+            i++;
+        }
+        System.out.println();
     }
 
-    void menu(){
-        System.out.print("----------------------------MENU----------------------------\n
-        (1) Using For Loop.\n(2) Using While Loop.\n(3) Using Recurrsion.\n(4) Exit\nEnter the Choice : ")
+    static void useForLoop(int num){
+        if(num <= 0){
+            System.out.println("Invalid Number!!");
+            return ;
+        }
+        int num1 = 0, num2 = 1;
+        for(int i = 0; i<num;i++){
+            System.out.print(num1 + " ");
+            int add = num1 + num2;
+            num1 = num2;
+            num2 = add;
+        }
+        System.out.println();
     }
 
-    public static void amin(String[] args){
+    static void useRecurrsion(int num){
+        System.out.println("Teating Func Call!");
+    }
+
+    static void menu(){
+        System.out.print("---------------MENU----------------\n(1) Using For Loop.\n(2) Using While Loop.\n(3) Using Recurrsion.\n(4) Exit\nEnter the Choice : ");
+    }
+
+    public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         int choice = 0;
         do{
@@ -33,9 +61,10 @@ class sequence{
                     useRecurrsion(num);
                     break;
                 case 4:
-                    exit(0);
+                    System.exit(0);
                     break;
-                
+                default:
+                    System.err.println("Invalid Choice!!");
             }
         }
         while(choice!=4);
