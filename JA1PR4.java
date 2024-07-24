@@ -34,8 +34,8 @@ class sequence{
 
     static void useRecurrsion(int num,int num2,int num3){
         if(num > 0){
-            System.out.print(a + " ");
-            useRecurrsion(num-1,b,a+b);
+            System.out.print(num2 + " ");
+            useRecurrsion(num-1,num3,num2+num3);
         }
     }
 
