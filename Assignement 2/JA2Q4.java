@@ -1,9 +1,3 @@
-// 4) Write and run a JAVA program that reads a string from the user and perform the following.
-//  counts number of occurance of a given character (for example, " a") in a string.
-//  searches the last occurance of a character in a string.
-//  removes the unneccessary spaces from a string : leading and trailing spaces.
-//  displays the substring formed by the last ten characters of a string
-
 import java.util.Scanner;
 
 class stringOperation{
@@ -26,7 +20,7 @@ class stringOperation{
     }
 
     String decreaseSpaces(){
-        return str.trim();
+        return str.trim().replaceAll("\\s+"," ");
     }
 
     void lastTenChar(){
@@ -59,9 +53,9 @@ class stringOperation{
  
 Output : 
 
-Enter a Valid String : Okay Chaliye ek Valid String Boliye!!
+Enter a Valid String : Okay Chaliye     ek      Valid String Boliye!!
 Enter a character you want to search : a
-Last occurrence index of 'a': 17
+Last occurrence index of 'a': 26
 Number of occurrences of 'a': 3
 String After Decreasing Unecessary Space : Okay Chaliye ek Valid String Boliye!!
 Substring formed by the last ten characters is : g Boliye!!
