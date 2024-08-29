@@ -11,25 +11,49 @@ class mutableString{
     private String str;
     public Scanner scan = new Scanner(System.in);
 
-    void setString(){
-        System.out.print("Enter Valid Strings : ");
-        str = scan.nextLine();
-        str = str.replaceAll("\\s+"," ");
+    void setString(String str1){
+        str = str1;
+        str = str.replaceAll("\\s+"," ").trim();
     }
 
-    String sequenceReverse(){
-        String[] words=str.split("\\s+");
+    String getStrings(){
+        return str;
+    }
+
+    void sequenceReverse(){
+        String[] words = str.split("\\s+");
         String str2 = "";
         for (int i = words.length-1; i>-1; i--) {
             str2 += words[i] + " ";
         }
-        return str2;
+        this.str = str2;
+    }
+
+    void 
+
+    void charReverse() {
+        String[] words = str.split("\\s+");
+        StringBuilder result = new StringBuilder();
+        
+        for (int i = 0;i<words.length;i++) {
+            String word = words[i];
+            StringBuilder wordBuilder = new StringBuilder(word);
+            String reversedWord = wordBuilder.reverse().toString();
+            result.append(reversedWord).append(" ");
+        }
+
+        this.str = result.toString().trim();
     }
  
     public static void main(String[] args) {
         mutableString str1 = new mutableString();
-        str1.setString(); 
-        System.out.print("Reversed String : " + str1.sequenceReverse());
-
+        String str;
+        System.out.print("Enter Valid Strings : ");
+        str = str1.scan.nextLine();
+        str1.setString(str);
+        str1.sequenceReverse();
+        System.out.println("Reversed String : " + str1.getStrings());
+        str1.charReverse();
+        System.out.println("Reversed Character String : " + str1.getStrings());
     }
 }
