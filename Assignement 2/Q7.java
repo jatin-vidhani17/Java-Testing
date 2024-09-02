@@ -29,7 +29,43 @@ class mutableString{
         this.str = str2;
     }
 
-    void 
+    void concat(String addString,int pos){
+        if(pos == 0){
+            this.str = addString + " " + this.str;
+            System.out.println(this.getStrings());
+        }
+        else if(pos == 1){
+            this.str = this.str + " " + addString;
+            System.out.println(this.getStrings());
+        }
+    }
+
+    void lengthSort() {
+        String[] words = str.split(" ");
+        for (int i = 0; i < words.length - 1; i++) {
+            for (int j = i + 1; j < words.length; j++) {
+                if (words[i].length() > words[j].length()) {
+                    String temp = words[i];
+                    words[i] = words[j];
+                    words[j] = temp;
+                }
+            }
+        }
+        str = "";
+        for (String word : words) {
+            str += word + " ";
+        }
+        str = str.trim();
+    }
+
+    void alphaSort(){
+        String[] words = this.str.split("\\s+");
+        for (int i = 0; i < words.length-1; i++) {
+            for (int j = i; j < words.length-1; j++) {
+                
+            }
+        }
+    }
 
     void charReverse() {
         String[] words = str.split("\\s+");
@@ -47,13 +83,23 @@ class mutableString{
  
     public static void main(String[] args) {
         mutableString str1 = new mutableString();
-        String str;
+        String str,str_temp;
         System.out.print("Enter Valid Strings : ");
         str = str1.scan.nextLine();
         str1.setString(str);
         str1.sequenceReverse();
-        System.out.println("Reversed String : " + str1.getStrings());
+        System.out.println("\nReversed String : " + str1.getStrings());
         str1.charReverse();
-        System.out.println("Reversed Character String : " + str1.getStrings());
+        System.out.println("\nReversed Character String : " + str1.getStrings());
+        str1.lengthSort();
+        System.out.println("\nSorted According to Length of the String : " + str1.getStrings());
+        System.out.print("\nEnter The Postion where You want To Add String : \n(0) Front of Previous String.\n(1) Back of Previous String.\nEnter Position : ");
+        int pos = str1.scan.nextInt();
+        System.out.print("\nEnter the string you want to add : ");
+        str1.scan.nextLine();
+        str_temp = str1.scan.nextLine();
+        // str1.scan.nextLine();
+        str1.concat(str_temp, pos);
+        System.out.print("\nConacatenated String : " + str1.getStrings());
     }
 }
