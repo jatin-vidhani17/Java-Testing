@@ -1,11 +1,3 @@
-// Write an application that reads and processes strings from the console.
-// Perform the following functions based on the menu choice selected by the user..
-//  Reverse the sequence of strings and then display it.
-//  Reverse the sequence of characters in each string and then display it.
-//  rearrange the strings according to the length of the string.
-//  Sorting
-//  Concatenation
-//  Change them to uppercase, lowercase depending on user’s choice.
 import java.util.*;
 
 class mutableString{
