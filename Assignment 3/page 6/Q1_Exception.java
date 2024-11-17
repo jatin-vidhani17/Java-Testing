@@ -142,12 +142,12 @@ Menu:
 2. Exit
 Enter your choice: 1
 Enter Employee Code (Format: yy-D-###): 91-M-123
-Enter Name: John Doe
+Enter Name: Rama Rao
 Enter Date of Birth (dd-MM-yyyy): 15-08-1985
 Enter Date of Appointment (dd-MM-yyyy): 01-04-2010
 Employee Details:
 Employee Code: 91-M-123
-Name: John Doe
+Name: Rama Rao
 Date of Birth: 15-08-1985
 Date of Appointment: 01-04-2010
 Years of Experience: 14
@@ -157,7 +157,7 @@ Menu:
 2. Exit
 Enter your choice: 1
 Enter Employee Code (Format: yy-D-###): 91-X-126
-Enter Name: Jane Smith
+Enter Name: Krishna Yadav
 Enter Date of Birth (dd-MM-yyyy): 15-08-1988
 Enter Date of Appointment (dd-MM-yyyy): 01-05-2015
 Invalid employee code format. Please enter in the format yy-D-###
