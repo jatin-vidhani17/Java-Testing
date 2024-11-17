@@ -1,0 +1,7 @@
+Payslip for Employee: Dev
+Employee No: EMP3348
+Designation: Python Developer
+Basic Salary: 60000.0
+HRA: 4500.0
+DA: 3000.0
+Net Pay: 67500.0

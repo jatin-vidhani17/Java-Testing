@@ -1,0 +1,7 @@
+Payslip for Employee: Rahul Soni
+Employee No: EMP7152
+Designation: Sales Manager
+Basic Salary: 10000.0
+HRA: 1000.0
+DA: 800.0
+Net Pay: 11800.0
